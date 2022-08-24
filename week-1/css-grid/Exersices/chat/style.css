@@ -1,0 +1,78 @@
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 18fr 1fr;
+    grid-template-areas:
+        "s m"
+        "s f";
+}
+
+.side-nav {
+    display: grid;
+    grid-area: s;
+    background-color: purple;
+}
+
+
+.friend{
+    grid-area: n;
+    margin-top: 15px;
+    display: grid;
+    background-color: lightcoral;
+}
+
+.main {
+    grid-area: m;
+    background-color: lightblue;
+    grid-template-rows: 1fr 6fr;
+    grid-template-columns: 1fr 0fr;
+
+}
+
+.foot {
+    grid-area: f;
+    background-color: white;
+    grid-template-columns: 4fr 1fr;
+    display: grid;
+
+}
+
+
+.msgContainer {
+    display: grid;
+    height: 20vh;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-rows: 1fr 1fr;
+    margin-left: 10px;
+    /* margin-top: 15px; */
+    /* grid-template-areas: "c"; */
+}
+
+.msgContent {
+    /* grid-area: c; */
+    display: grid;
+    border-radius: 5px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5px;
+    grid-template-areas: "d t";
+}
+
+.time {
+    /* text-align: left; */
+    grid-area: t;
+    display: grid;
+    /* text-align: left; */
+    text-align: right;
+    padding-right: 5px;
+}
+
+
+.text {
+    /* text-align: left; */
+    padding-left: 5px;
+    grid-area: d;
+    display: grid;
+}

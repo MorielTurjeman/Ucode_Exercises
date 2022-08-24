@@ -1,0 +1,20 @@
+.text{
+    background-color: #f39c12;
+    max-width:500px;
+    min-height: 50px;
+  }
+
+  @media(max-width: 768px){
+    input{
+      display: block;
+    }
+  }
+
+
+  /* changes the width property of any element with a class column to 100% as soon as the width of the page is fewer than 700px. */
+  @media(max-width:700px){
+    .column{
+      width:100%;
+    }
+  }
+    
